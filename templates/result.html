@@ -19,6 +19,7 @@ body {
 	background-attachment: fixed;
 	background-size: 200px;
 }
+
 .button {
 		background-color: darkcyan; /* Green */
  		border: none;
@@ -40,24 +41,18 @@ body {
 <div class="container">
 <div class="jumbotron text-center" style="background-color:darkcyan">
 	<h1 id="title" style="color: antiquewhite"><b>MBTA Finder</b></h1>
-  	<p style="color: #FFFFFF">Find the closest MBTA stop to you! </p>
+  	<p style="color: #FFFFFF">This is the closest MBTA stop to you! </p>
 	</div>
-<div class="containter">
+<div class ="containter">
 <div class="row">
-	<form method="post">
-	<p>
-		Where are you currently located?<input name="location" size="20">
-	</p>
-	<p>
-		<input class="button" type="submit">
-	</p>	
-	</form>
-</div> 
 
+	<p style="font-size: 30px">
+	Your closest MBTA stop is {{stop}}. The wheelchair info is {{wheelchair}}. Rating is {{rating}}.
+	</p>	
+
+</div> 
 </div>
 
-
-
-
+</div>
 </body>
 </html>
